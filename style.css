@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(muaxuan.jpg) no-repeat center/cover;
+}
+
+#weather {
+  width: 350px;
+  padding: 30px 20px;
+  background: url(muaxuan.jpg) no-repeat center/cover;
+  border-radius: 10px;
+}
+
+.search {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 0 15px 0 15px;
+  background: rgba(255, 255, 255, 0.3);
+  transition: 0.4s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search:focus {
+  border-radius: 15px 0 15px 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.content {
+  color: white;
+  transition: 0.4s;
+}
+
+.capital {
+  text-align: center;
+  margin-top: 40px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.time {
+  text-align: center;
+}
+
+.temperature {
+  text-align: center;
+  font-size: 65px;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 20px 30px;
+  border: none;
+  border-radius: 10px;
+}
+
+.description {
+  text-align: center;
+  font-size: 45px;
+  padding: 20px 0;
+  font-weight: bold;
+  text-shadow: 4px 4px rgba(red, green, blue, alpha);
+}
+
+.more-description {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 50px 0;
+}
+
+.visibility,
+.wind,
+.sun {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/*nóng*/
+.hot {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(hot.webp) no-repeat center/cover;
+}
+.hot #weather {
+  background: url(hot.webp) no-repeat center/cover;
+}
+
+/*mát mẽ*/
+.cool {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(cool.webp) no-repeat center/cover;
+}
+.cool #weather {
+  background: url(cool.webp) no-repeat center/cover;
+}
+
+/*ấm*/
+.warm {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(muaxuan.jpg) no-repeat center/cover;
+}
+.warm #weather {
+  background: url(muaxuan.jpg) no-repeat center/cover;
+}
+
+/*lạnh*/
+.cold {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(cold.webp) no-repeat center/cover;
+}
+.cold#weather {
+  background: url(cold.webp) no-repeat center/cover;
+}
